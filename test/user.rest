@@ -1,0 +1,26 @@
+###
+GET http://192.168.18.210:4012/api/user/
+
+###
+GET http://192.168.18.210:4012/api/user/417eb0cb-668c-4eed-872f-caa635c188aa
+
+###
+POST http://192.168.18.210:4012/api/user/
+Content-Type: application/json
+
+{
+    "name": "kubus",
+    "address": "discord"
+}
+
+###
+PATCH http://192.168.18.210:4012/api/user/7aba5b8f-26cb-4d39-b4cb-b8c871b73097
+Content-Type: application/json
+
+{
+    "name": "rayya",
+    "address": "portugal"
+}
+
+
+DELETE http://192.168.18.210:4012/api/user/7aba5b8f-26cb-4d39-b4cb-b8c871b73097

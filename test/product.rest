@@ -1,0 +1,29 @@
+###
+GET http://192.168.18.210:4012/api/product/
+
+###
+GET http://192.168.18.210:4012/api/product/9063ba06-fc2b-4b55-860b-96726d544508
+
+###
+POST http://192.168.18.210:4012/api/product/
+Content-Type: application/json
+
+{
+   "nameProduct" : "Bimoli",
+   "price" : 150000,
+   "expired" : "1997-07-16T19:20:30.451Z",
+   "userId" : "417eb0cb-668c-4eed-872f-caa635c188aa"
+}
+
+###
+PATCH  http://192.168.18.210:4012/api/product/9063ba06-fc2b-4b55-860b-96726d544508
+Content-Type: application/json
+
+{
+   "nameProduct" : "sunco",
+   "price" : 100000
+}
+
+
+###
+DELETE http://192.168.18.210:4012/api/product/36ff4adb-1101-4c70-a23c-81ed9c383960
